@@ -39,7 +39,7 @@ export default function Features() {
     <section
       id="features"
       aria-label="Features"
-      className="relative overflow-hidden bg-white py-24"
+      className="relative overflow-hidden bg-white py-12"
     >
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,#EEF4FB_0%,#FFFFFF_15%,#FFFFFF_85%,#EEF4FB_100%)]" />
       <div className="pointer-events-none absolute right-[-130px] top-[26%] z-0 h-[420px] w-[420px] animate-drift-b rounded-full bg-[radial-gradient(circle,rgba(59,110,248,0.12)_0%,transparent_70%)] blur-[66px]" />

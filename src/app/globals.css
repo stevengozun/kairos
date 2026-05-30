@@ -94,13 +94,17 @@
 html {
   scroll-behavior: smooth;
   /* Full-page scroll-snap. `proximity` (not `mandatory`) so sections taller
-     than the viewport never trap the scroll. 68px clears the fixed navbar. */
+     than the viewport never trap the scroll. The navbar auto-hides on scroll,
+     so it reserves no space here — a clicked section fills the viewport edge to
+     edge with its content centered and nothing clipped at the bottom. */
   scroll-snap-type: y proximity;
-  scroll-padding-top: 68px;
+  scroll-padding-top: 0;
 }
 
 /* Every section fills at least one screen, content vertically centered, and
-   acts as a snap target. min-height (not height) lets tall sections grow. */
+   acts as a snap target. min-height (not height) lets tall sections grow so
+   content is never clipped — combined with vertical centering this guarantees
+   each section is at least full-screen and always fully visible. */
 main > section {
   min-height: 100vh;
   min-height: 100dvh;
@@ -110,12 +114,10 @@ main > section {
   scroll-snap-align: start;
 }
 
-/* Pricing is a tall, vertically-centered section. The global 68px
-   scroll-padding pushes its centered content down far enough to clip the
-   bottom card row. Pull the snap point up by half the navbar height so the
-   section centers within the visible area below the navbar instead. */
-#pricing {
-  scroll-margin-top: -34px;
+/* Dashboard is the exception: its four-card grid is intentionally taller than
+   the viewport, so top-align it (instead of centering) and let it scroll. */
+#dashboard {
+  justify-content: flex-start;
 }
 
 body {

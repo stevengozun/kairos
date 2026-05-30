@@ -31,7 +31,7 @@ export default function Testimonials() {
     <section
       id="testimonials"
       aria-label="Customer testimonials"
-      className="relative overflow-hidden bg-white py-24"
+      className="relative overflow-hidden bg-white py-12"
     >
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,#EEF4FB_0%,#FFFFFF_12%,#FFFFFF_88%,#EEF4FB_100%)]" />
       <div className="pointer-events-none absolute left-1/2 top-[30%] z-0 -ml-[260px] h-[520px] w-[520px] animate-drift-a rounded-full bg-[radial-gradient(circle,rgba(59,110,248,0.08)_0%,transparent_70%)] blur-[80px]" />

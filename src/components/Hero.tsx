@@ -165,7 +165,7 @@ export default function Hero() {
                 width={660}
                 height={900}
                 priority
-                className="h-auto w-[clamp(360px,48vw,660px)] max-w-[150%] translate-x-[28%] drop-shadow-[0_30px_70px_rgba(13,27,62,0.25)]"
+                className="h-auto w-[clamp(280px,38vw,520px)] max-w-[150%] translate-x-[28%] drop-shadow-[0_30px_70px_rgba(13,27,62,0.25)]"
               />
             </div>
           </div>

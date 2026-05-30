@@ -16,7 +16,7 @@ export default function FinanceSimple() {
     <section
       id="finance"
       aria-label="Finance features"
-      className="relative overflow-hidden bg-[linear-gradient(165deg,#F3F7FF_0%,#E9F1FF_55%,#EEF4FB_100%)] py-24"
+      className="relative overflow-hidden bg-[linear-gradient(165deg,#F3F7FF_0%,#E9F1FF_55%,#EEF4FB_100%)] py-12"
     >
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,#EEF4FB_0%,transparent_14%,transparent_86%,#EEF4FB_100%)]" />
       <div className="pointer-events-none absolute left-[-140px] top-[18%] z-0 h-[460px] w-[460px] animate-drift-a rounded-full bg-[radial-gradient(circle,rgba(167,139,250,0.18)_0%,transparent_70%)] blur-[70px]" />

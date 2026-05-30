@@ -79,7 +79,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="flex items-center justify-between border-t border-white/[0.08] pt-8 max-[640px]:flex-col max-[640px]:gap-4 max-[640px]:text-center">
-          <p className="text-xs text-white/35">© 2025 Kairos, Inc. All rights reserved.</p>
+          <p className="text-xs text-white/35">© 2026 Kairos, Inc. All rights reserved.</p>
           <div className="flex gap-6 max-[640px]:flex-wrap max-[640px]:justify-center max-[640px]:gap-3">
             {["Privacy", "Terms", "Cookies", "Sitemap"].map((l) => (
               <a key={l} href="#" className="text-xs text-white/35 transition-colors hover:text-white/70">

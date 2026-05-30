@@ -123,7 +123,7 @@ export default function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing plans"
-      className="relative block overflow-hidden bg-bg pb-24 pt-16"
+      className="relative overflow-hidden bg-bg py-12"
     >
       <div className="pointer-events-none absolute right-[-140px] top-[14%] z-0 h-[460px] w-[460px] animate-drift-b rounded-full bg-[radial-gradient(circle,rgba(59,110,248,0.11)_0%,transparent_70%)] blur-[72px]" />
       <div className="pointer-events-none absolute bottom-[10%] left-[-120px] z-0 h-[380px] w-[380px] animate-drift-a rounded-full bg-[radial-gradient(circle,rgba(167,139,250,0.12)_0%,transparent_70%)] blur-[66px]" />
