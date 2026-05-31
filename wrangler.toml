@@ -1,0 +1,6 @@
+name = "kairos"
+compatibility_date = "2024-09-25"
+
+# Static export output from `next build` (output: "export").
+[assets]
+directory = "./out"
