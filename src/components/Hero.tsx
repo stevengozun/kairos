@@ -1,4 +1,8 @@
+"use client";
+
+import { useRef } from "react";
 import Image from "next/image";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import AnimatedText from "./AnimatedText";
 
 function Sparkline({ up }: { up: boolean }) {
@@ -59,8 +63,20 @@ const AVATARS = [
 ];
 
 export default function Hero() {
+  const ref = useRef<HTMLElement>(null);
+  const prefersReducedMotion = useReducedMotion();
+
+  // Drive a subtle zoom + parallax across the hero as it scrolls out of view.
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  // Subtle zoom applied ONLY to the phone-in-hand as the hero scrolls.
+  const phoneScale = useTransform(scrollYProgress, [0, 1], [1, 1.22]);
+
   return (
     <section
+      ref={ref}
       id="home"
       aria-label="Hero"
       className="relative z-0 h-screen min-h-[640px] overflow-hidden bg-[linear-gradient(160deg,#EEF4FB_0%,#F5F9FF_40%,#E8F0FD_100%)]"
@@ -157,8 +173,15 @@ export default function Hero() {
               </ul>
             </div>
 
-            {/* Phone */}
-            <div className="relative z-[2] flex shrink-0 items-end">
+            {/* Phone — zooms on scroll, anchored at the hand (bottom) */}
+            <motion.div
+              className="relative z-[2] flex shrink-0 items-end"
+              style={
+                prefersReducedMotion
+                  ? undefined
+                  : { scale: phoneScale, transformOrigin: "center bottom", willChange: "transform" }
+              }
+            >
               <Image
                 src="/images/phone-mockup.png"
                 alt="Kairos app shown on an iPhone held in hand"
@@ -167,7 +190,7 @@ export default function Hero() {
                 priority
                 className="h-auto w-[clamp(280px,38vw,520px)] max-w-[150%] translate-x-[28%] drop-shadow-[0_30px_70px_rgba(13,27,62,0.25)]"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
