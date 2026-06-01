@@ -116,12 +116,12 @@ export default function Hero() {
             <VisitCard
               value="1,235"
               up
-              className="left-[-40px] top-[40%] animate-float-slow [animation-delay:0.5s] max-lg:left-auto max-lg:right-[2%] max-sm:right-0 max-sm:top-[18%]"
+              className="left-[-40px] top-[40%] animate-float-slow [animation-delay:0.5s] max-lg:left-auto max-lg:right-[2%] max-sm:left-[4px] max-sm:right-auto max-sm:top-[58%] max-sm:scale-[0.8] max-sm:origin-top-left"
             />
             <VisitCard
               value="456"
               up={false}
-              className="left-[-64px] top-[58%] animate-float-slow [animation-delay:0.8s] max-lg:left-[2%] max-sm:hidden"
+              className="left-[-64px] top-[58%] animate-float-slow [animation-delay:0.8s] max-lg:left-[2%] max-sm:left-auto max-sm:right-[4px] max-sm:top-[58%] max-sm:scale-[0.8] max-sm:origin-top-right"
             />
 
             {/* Transaction limit card */}
@@ -144,7 +144,7 @@ export default function Hero() {
             </div>
 
             {/* Investments donut card */}
-            <div className="absolute right-[-90px] top-[500px] z-[3] flex w-[190px] animate-float-slow flex-col gap-3 rounded-card border border-white/70 bg-white/75 px-4 py-[14px] shadow-[0_16px_44px_rgba(13,27,62,0.14)] backdrop-blur-md [animation-delay:1s] max-lg:right-[2%]">
+            <div className="absolute right-[-90px] top-[500px] z-[3] flex w-[190px] animate-float-slow flex-col gap-3 rounded-card border border-white/70 bg-white/75 px-4 py-[14px] shadow-[0_16px_44px_rgba(13,27,62,0.14)] backdrop-blur-md [animation-delay:1s] max-lg:right-[2%] max-sm:left-auto max-sm:right-[2px] max-sm:top-auto max-sm:bottom-[6%] max-sm:w-[150px] max-sm:scale-[0.78] max-sm:origin-bottom-right">
               <div className="relative h-[84px] w-[84px] self-center">
                 <svg viewBox="0 0 42 42" className="h-[84px] w-[84px]" aria-hidden>
                   <circle cx="21" cy="21" r="15.915" fill="none" stroke="#E9EEF6" strokeWidth="5" />
@@ -188,7 +188,7 @@ export default function Hero() {
                 width={660}
                 height={900}
                 priority
-                className="h-auto w-[clamp(280px,38vw,520px)] max-w-[150%] translate-x-[28%] drop-shadow-[0_30px_70px_rgba(13,27,62,0.25)]"
+                className="h-auto w-[clamp(280px,38vw,520px)] max-w-[150%] translate-x-[28%] drop-shadow-[0_30px_70px_rgba(13,27,62,0.25)] max-sm:translate-x-0"
               />
             </motion.div>
           </div>

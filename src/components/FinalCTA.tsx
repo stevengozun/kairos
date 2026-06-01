@@ -45,7 +45,7 @@ export default function FinalCTA() {
           {/* Phone + floating cards */}
           <Reveal delay={3} className="relative flex justify-center">
             {/* Performance card */}
-            <div className="absolute left-[195px] top-[14%] z-[3] w-[185px] animate-float-slow rounded-card border border-white/40 bg-white/[0.16] px-3.5 py-3 text-left shadow-[0_12px_36px_rgba(13,27,62,0.08)] backdrop-blur-[10px] [animation-delay:0.4s] max-sm:left-0 max-sm:top-[2%] max-sm:w-[150px]">
+            <div className="absolute left-[195px] top-[14%] z-[3] w-[185px] animate-float-slow rounded-card border border-white/40 bg-white/[0.16] px-3.5 py-3 text-left shadow-[0_12px_36px_rgba(13,27,62,0.08)] backdrop-blur-[10px] [animation-delay:0.4s] max-sm:left-[6px] max-sm:top-[2%] max-sm:w-[150px] max-sm:scale-[0.8] max-sm:origin-top-left">
               <div className="mb-2 flex items-center justify-between gap-2.5">
                 <span className="text-[11px] font-medium text-secondary">Performance</span>
                 <span className="text-[13px] font-bold tracking-tight text-navy">$3,654.08</span>
@@ -68,7 +68,7 @@ export default function FinalCTA() {
             </div>
 
             {/* Exchange rate card */}
-            <div className="absolute right-[22%] top-[44%] z-[3] w-[155px] animate-float-slow rounded-card border border-white/40 bg-white/[0.16] px-3.5 py-3 text-left shadow-[0_12px_36px_rgba(13,27,62,0.08)] backdrop-blur-[10px] [animation-delay:1s] max-sm:right-0 max-sm:w-[140px]">
+            <div className="absolute right-[22%] top-[44%] z-[3] w-[155px] animate-float-slow rounded-card border border-white/40 bg-white/[0.16] px-3.5 py-3 text-left shadow-[0_12px_36px_rgba(13,27,62,0.08)] backdrop-blur-[10px] [animation-delay:1s] max-sm:right-[6px] max-sm:top-auto max-sm:bottom-[10%] max-sm:w-[146px] max-sm:scale-[0.8] max-sm:origin-bottom-right">
               <div className="mb-2 flex items-start justify-between">
                 <span className="text-[11px] font-medium text-secondary">Exchange Rate</span>
                 <span className="flex h-[22px] w-[22px] shrink-0 items-center justify-center rounded-full bg-blue/10 text-blue">

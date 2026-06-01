@@ -179,7 +179,7 @@ export default function Pricing() {
         {/* Cards */}
         <div className="grid items-center gap-5 lg:grid-cols-3">
           {PLANS.map((plan, i) => {
-            const amount = annual ? plan.annual : plan.monthly;
+            const amount = annual ? plan.monthly : plan.annual;
             if (plan.popular) {
               return (
                 <Reveal
